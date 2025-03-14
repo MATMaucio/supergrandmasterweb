@@ -9,23 +9,36 @@
 <body>
     <header>
         <div class="container">
-            <h1>Super Grand Masters</h1>
-            <p>¡Prepárate para la aventura definitiva!</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">Acerca del Juego</a></li>
+                    <li><a href="#trailer">Tráiler</a></li>
+                    <li><a href="#features">Características</a></li>
+                    <li><a href="#social">Síguenos</a></li>
+                </ul>
+            </nav>
+            <div class="header-content">
+                <h1>Super Grand Masters</h1>
+                <p>¡Prepárate para la aventura definitiva!</p>
+                <img src="assets/images/game-image.png" alt="Super Grand Masters" class="header-image">
+                <div class="platform-buttons">
+                    <a href="#" class="platform-button" onclick="showPreRegisterMessage('Google Play')">
+                        <img src="assets/images/google-play.png" alt="Google Play">
+                    </a>
+                    <a href="#" class="platform-button" onclick="showPreRegisterMessage('App Store')">
+                        <img src="assets/images/app-store.png" alt="App Store">
+                    </a>
+                    <a href="#" class="platform-button" onclick="showPreRegisterMessage('Microsoft Store')">
+                        <img src="assets/images/microsoft-store.png" alt="Microsoft Store">
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
     <main>
         <section id="about" class="container">
             <h2>Acerca del Juego</h2>
             <p>Super Grand Masters es un emocionante juego de acción y aventura que te llevará a través de mundos increíbles y desafíos épicos.</p>
-        </section>
-        <section id="features" class="container">
-            <h2>Características</h2>
-            <ul>
-                <li>Gráficos impresionantes</li>
-                <li>Jugabilidad adictiva</li>
-                <li>Multijugador en línea</li>
-                <li>Actualizaciones regulares</li>
-            </ul>
         </section>
         <section id="trailer" class="container">
             <h2>Tráiler</h2>
@@ -34,14 +47,74 @@
                 Tu navegador no soporta la reproducción de videos.
             </video>
         </section>
-        <section id="download" class="container">
-            <h2>Descargar</h2>
-            <p>Disponible próximamente en Google Play</p>
-            <a href="https://play.google.com/store" class="download-button">Pre-registrarse</a>
+        <section id="features" class="container">
+            <h2>Características</h2>
+            <div class="feature">
+                <h3>Gráficos impresionantes</h3>
+                <p>Disfruta de gráficos de alta calidad que te sumergirán en el mundo de Super Grand Masters.</p>
+            </div>
+            <div class="feature">
+                <h3>Jugabilidad adictiva</h3>
+                <p>Experimenta una jugabilidad fluida y adictiva que te mantendrá enganchado durante horas.</p>
+            </div>
+            <div class="feature">
+                <h3>Multijugador en línea</h3>
+                <p>Compite con jugadores de todo el mundo en emocionantes partidas multijugador.</p>
+            </div>
+            <div class="feature">
+                <h3>Actualizaciones regulares</h3>
+                <p>Recibe actualizaciones periódicas con nuevos contenidos y mejoras.</p>
+            </div>
+        </section>
+        <section id="social" class="container">
+            <h2>Síguenos</h2>
+            <div class="social-icons">
+                <a href="#"><img src="assets/images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="assets/images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="assets/images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="assets/images/youtube.png" alt="YouTube"></a>
+            </div>
         </section>
     </main>
     <footer>
-        <div class="container">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Super Grand Masters</h3>
+                <p>Super Grand Masters es un emocionante juego de acción y aventura que te llevará a través de mundos increíbles y desafíos épicos.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#about">Acerca del Juego</a></li>
+                    <li><a href="#trailer">Tráiler</a></li>
+                    <li><a href="#features">Características</a></li>
+                    <li><a href="#social">Síguenos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="assets/images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/images/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="assets/images/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="assets/images/youtube.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-carousel">
+            <button class="carousel-button prev">&lt;</button>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="assets/images/app1.png" alt="App 1">
+                    <img src="assets/images/app2.png" alt="App 2">
+                    <img src="assets/images/app3.png" alt="App 3">
+                    <img src="assets/images/app4.png" alt="App 4">
+                    <img src="assets/images/app5.png" alt="App 5">
+                </div>
+            </div>
+            <button class="carousel-button next">&gt;</button>
+        </div>
+        <div class="footer-bottom">
             <p>&copy; 2025 Super Grand Masters. Todos los derechos reservados.</p>
         </div>
     </footer>
